@@ -1,6 +1,3 @@
-import os
-from dotenv import load_dotenv
-load_dotenv()
 import discord
 from discord import app_commands
 from discord.ext import commands
@@ -70,4 +67,4 @@ async def ticket_command(interaction: discord.Interaction):
     view = TicketButtons()
     await interaction.response.send_message("문의할 버튼을 눌러 티켓을 생성하세요!", view=view, ephemeral=False)
 
-bot.run(os.getenv("DISCORD_TOKEN"))
+bot.run("MTM3OTc2MDQ2NzgxOTQ5NTQ3NQ.GSFGA_.FdpOKLeqC76S2HlYPjIgBxL8jwoeUHViGRwiV4")
